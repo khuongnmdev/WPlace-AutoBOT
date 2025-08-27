@@ -7231,6 +7231,7 @@
                   await Utils.sleep(totalDelay)
                 }
                 updateStats();
+                await Utils.sleep(3000);
               } else {
                 // If batch failed after all retries, stop painting to prevent infinite loops
                 console.error(`❌ Batch failed permanently after retries. Stopping painting.`);
